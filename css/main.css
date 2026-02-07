@@ -2239,3 +2239,31 @@ input[type=checkbox] {
     margin-left: 1rem;
   }
 }
+/* 整体悬浮位置 */
+#aplayer-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* 极简搜索框 */
+#music-search {
+  width: 160px;
+  padding: 4px 6px;
+  margin-bottom: 6px;
+  background: transparent; /* ⭐ 无背景 */
+  border: none; /* ⭐ 无边框 */
+  border-bottom: 1px solid #ccc; /* ⭐ 只保留一条细线，更优雅 */
+  color: #fff; /* 暗色模式可见 */
+  outline: none;
+  font-size: 12px;
+  opacity: 0.8; /* ⭐ 更轻盈 */
+  transition: opacity 0.2s;
+}
+#music-search:focus {
+  opacity: 1;
+  border-bottom-color: #00eaff; /* 聚焦时更亮 */
+}
